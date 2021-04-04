@@ -1,0 +1,54 @@
+.list {
+   display: flex;
+   list-style-type: none;
+   flex-direction: row;
+   flex-basis: 35%;
+   font-family: Arial, Helvetica, sans-serif;
+   font-size: 1.2rem;
+   padding-top: 20px;
+   a {
+      margin-right: 15px;
+      text-decoration: none;
+      color: #fff;
+   }
+
+   a.active {
+      color: red;
+   }
+
+}
+.list a:nth-child(3) {
+   position: relative;
+   
+   .submenu {
+      color: #fff;
+      background-color: rgb(187, 181, 181);
+      position: absolute;
+      width: 100px;
+      margin: 0;
+      padding: 0;
+      display: none;
+      list-style: none;
+      li{
+         margin-top: 5px;
+         a{
+            padding: 0 10px;
+         }
+      }
+   }
+
+}
+.list a:nth-child(3):hover {
+   .submenu{
+      display: block;
+      height: 90px;
+ 
+   }
+   .submenu a:hover{
+      background-color: pink;
+   }
+}
+.list a:last-child {
+   margin: 0;
+}
+

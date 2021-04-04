@@ -1,0 +1,43 @@
+.slider{
+   position: relative;
+   display: flex;
+   height: calc(100vh - 140px);
+   width: 100%;
+   img{
+      object-fit: cover;
+      width: 100%;
+      height: 100%;
+
+   }
+   .left-slide{
+      position: absolute;
+      top: 50%;
+      z-index: 10px;
+      font-size: 40px;
+      color: #fff;
+
+      left: 32px;
+      cursor: pointer;
+      user-select: none;
+
+   }
+   .right-slide{
+      position: absolute;
+      top: 50%;
+      z-index: 10px;
+      font-size: 40px;
+      color: #fff;
+      right: 32px;
+      cursor: pointer;
+      user-select: none;
+   }
+   .slide{
+      opacity: 0;
+      transition-duration: 1s;
+      
+   }
+   .slide.active{
+      opacity: 1;
+      transition-duration: 1s;
+   }
+}

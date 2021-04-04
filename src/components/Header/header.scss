@@ -1,0 +1,47 @@
+.header {
+   display: flex;
+   flex-direction: row;
+   text-align: center;
+   background-color: pink;
+   height: 70px;
+   width: 100%;
+   .title {
+      margin-right: 150px;
+      color: #fff;
+   }
+
+   .icons{
+      flex-basis: 30%;
+      padding: 20px 0;
+      i {
+         margin-right: 15px;
+         color: #fff;
+
+      }
+   
+   }
+   .icons i:last-child {
+      margin-left: 20px;
+      margin-right: 0;
+   }
+   .search {
+      align-items: center;
+      padding-top: 15px;
+
+     .input {
+        color: rgba($color: #000000, $alpha: 0.7);
+        padding: 10px 0;
+        border: 1px solid #000;
+        border-radius: 5px;
+     }
+   }
+   .btn {
+      background-color: red;
+      color: #fff;
+      padding: 10px 8px;
+      font-weight: bold;
+      border-radius: 5px;
+
+ 
+   }
+ }
